@@ -49,7 +49,7 @@ Weather-Card/
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/palshrenik/weather-card.git
+   git clone https://github.com/palshrenik/Weather-card.git
    ```
 
 2. Navigate to the project folder:
