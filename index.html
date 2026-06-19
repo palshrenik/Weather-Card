@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body>
+    
+    <div class="card">
+        <div class="search">
+            <input class="searchbar" type="text" placeholder="Enter Your City" spellcheck="false"/>
+            <button class="searchbtn">
+                <span class="material-symbols-outlined">search</span>
+            </button>
+
+            <div class="loading-container" id="loader">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <img src="image/search-city.png" class="default-img" />
+    <img src="image/not-found.png" class="error-img" />
+
+    <div class="weatherinfo">
+        <div class="location-date-container">
+            <div class="location">
+                <span class="material-symbols-outlined">location_on</span>
+                <h2 class="place">Jarkhand</h2>
+            </div>
+
+            <div class="weather-temp-container">
+                <h4 class="date">Wed, 07 Aug</h4>
+                <img class="weathersymbol" src="assets/assets/weather/thunderstorm.svg"/>
+                <h1 class="temp">29 &deg;C</h1>
+                <h3 class="weather">Cloudy</h3>
+            </div>
+
+            <div class="humidity-container">
+                <span class="material-symbols-outlined">water_drop</span>
+                <h4 class="humidity">Humidity</h4>
+                <h5 class="humiditypercentage">55%</h5>
+            </div>
+
+            <div class="speed-container">
+                <span class="material-symbols-outlined">airwave</span>
+                <h4 class="windspeed">Wind Speed</h4>
+                <h5 class="speed">11 m/s</h5>
+            </div>
+
+            <div class="pressure-container">
+                <span class="material-symbols-outlined">speed</span>
+                <h4 class="pressure">Pressure</h4>
+                <h5 class="pascal">1013 hPa</h5>
+            </div>
+
+            <div class="uv-container">
+                <span class="material-symbols-outlined">wb_sunny</span>
+                <h4 class="UV">UV Index</h4>
+                <h5 class="uvindex">1</h5>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
